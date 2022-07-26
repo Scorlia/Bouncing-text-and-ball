@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+</head>
+<style>
+    body{
+        background-color: rgb(48, 56, 79);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .text{
+        color: white;
+        margin: 30px;
+    }
+
+    .box{
+        background-color: tomato;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+
+    }
+    .text:hover, .box:hover{
+        cursor: pointer;
+        animation: bounce 1s linear;
+        }
+
+        @keyframes bounce{
+            20%, 50%, 80%, to{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-40px);
+            }
+            70%{
+                transform: translateY(-28px);
+            }
+            90%{
+                transform: translateY(-10px);
+            }
+        }
+</style>
+
+<body>
+    <h1 class="text">So bounce, bounce, c'mon, bounce, I said, c'mon, bounce!</h1>
+    <div class="box"></div>
+        
+
+</body>
+</html>
+
